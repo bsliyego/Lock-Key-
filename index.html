@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Survey</title>
+    <title>Lock&Key - Password Manager Survey</title>
     <style>
         * {
             margin: 0;
@@ -264,8 +264,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Product Experience Survey</h1>
-            <p>Help us improve by sharing your valuable feedback</p>
+            <h1>🔐 Lock&Key Survey</h1>
+            <p>Help us build the perfect password manager for you</p>
         </div>
 
         <div class="content">
@@ -297,10 +297,10 @@
                 </div>
 
                 <div class="section">
-                    <h2>Product Experience</h2>
+                    <h2>Password Management Experience</h2>
                     
                     <div class="form-group">
-                        <label>How would you rate your overall experience?</label>
+                        <label>How would you rate your current password management experience?</label>
                         <div class="rating-scale">
                             <div class="rating-option">
                                 <input type="radio" id="rating1" name="rating" value="1">
@@ -326,50 +326,95 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Which features do you use most? (Select all that apply)</label>
+                        <label>Which password management features are most important to you? (Select all that apply)</label>
                         <div class="checkbox-group">
                             <div class="checkbox-item">
-                                <input type="checkbox" id="feature1" name="features" value="dashboard">
-                                <label for="feature1">Dashboard</label>
+                                <input type="checkbox" id="feature1" name="features" value="autofill">
+                                <label for="feature1">Auto-Fill Passwords</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="feature2" name="features" value="analytics">
-                                <label for="feature2">Analytics</label>
+                                <input type="checkbox" id="feature2" name="features" value="generator">
+                                <label for="feature2">Password Generator</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="feature3" name="features" value="reports">
-                                <label for="feature3">Reports</label>
+                                <input type="checkbox" id="feature3" name="features" value="sync">
+                                <label for="feature3">Cross-Device Sync</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="feature4" name="features" value="integrations">
-                                <label for="feature4">Integrations</label>
+                                <input type="checkbox" id="feature4" name="features" value="2fa">
+                                <label for="feature4">Two-Factor Authentication</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="feature5" name="features" value="sharing">
+                                <label for="feature5">Secure Sharing</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="feature6" name="features" value="breach">
+                                <label for="feature6">Data Breach Monitoring</label>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="section">
-                    <h2>What matters most to you?</h2>
+                    <h2>💰 Pricing Feedback</h2>
+                    
+                    <div class="form-group">
+                        <label>What should be the monthly price of our Lock&Key password manager?</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="price1" name="pricing" value="free">
+                                <label for="price1">Free (with basic features)</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="price2" name="pricing" value="2.99">
+                                <label for="price2">$2.99/month</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="price3" name="pricing" value="4.99">
+                                <label for="price3">$4.99/month</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="price4" name="pricing" value="7.99">
+                                <label for="price4">$7.99/month</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="price5" name="pricing" value="9.99">
+                                <label for="price5">$9.99/month</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="price6" name="pricing" value="custom">
+                                <label for="price6">Other amount</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" id="customPriceGroup" style="display: none;">
+                        <label for="customPrice">Enter your suggested monthly price:</label>
+                        <input type="number" id="customPrice" name="customPrice" placeholder="Enter amount in USD" step="0.01" min="0">
+                    </div>
+                    
+                    <h2>What matters most to you in a password manager?</h2>
                     <div class="features-grid">
                         <div class="feature">
-                            <h3>🚀 Performance</h3>
-                            <p>Fast loading times and smooth user experience</p>
-                            <input type="checkbox" name="priorities" value="performance" style="display: none;">
-                        </div>
-                        <div class="feature">
-                            <h3>🛡️ Security</h3>
-                            <p>Advanced security measures and data protection</p>
+                            <h3>🔒 Security</h3>
+                            <p>Military-grade encryption and zero-knowledge architecture</p>
                             <input type="checkbox" name="priorities" value="security" style="display: none;">
                         </div>
                         <div class="feature">
-                            <h3>🎨 Design</h3>
-                            <p>Beautiful, intuitive and user-friendly interface</p>
-                            <input type="checkbox" name="priorities" value="design" style="display: none;">
+                            <h3>⚡ Performance</h3>
+                            <p>Fast auto-fill and seamless user experience</p>
+                            <input type="checkbox" name="priorities" value="performance" style="display: none;">
                         </div>
                         <div class="feature">
-                            <h3>💰 Pricing</h3>
-                            <p>Competitive and transparent pricing structure</p>
-                            <input type="checkbox" name="priorities" value="pricing" style="display: none;">
+                            <h3>🔄 Sync</h3>
+                            <p>Real-time synchronization across all your devices</p>
+                            <input type="checkbox" name="priorities" value="sync" style="display: none;">
+                        </div>
+                        <div class="feature">
+                            <h3>🎨 Usability</h3>
+                            <p>Intuitive design that makes security effortless</p>
+                            <input type="checkbox" name="priorities" value="usability" style="display: none;">
                         </div>
                     </div>
                 </div>
@@ -377,14 +422,14 @@
                 <div class="section">
                     <div class="form-group">
                         <label for="comments">Additional Comments</label>
-                        <textarea id="comments" name="comments" rows="5" placeholder="Share any additional thoughts or suggestions..."></textarea>
+                        <textarea id="comments" name="comments" rows="5" placeholder="Tell us what features you'd like to see in Lock&Key or any other feedback..."></textarea>
                     </div>
                 </div>
 
                 <div class="submit-section">
                     <button type="submit" class="submit-btn">Submit Survey</button>
                     <div id="successMessage" class="success-message">
-                        Thank you for your feedback! Your response has been recorded.
+                        Thank you for helping us build Lock&Key! Your feedback is invaluable.
                     </div>
                 </div>
             </form>
@@ -457,6 +502,20 @@
 
             feature.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Handle custom pricing input visibility
+        document.querySelectorAll('input[name="pricing"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                const customPriceGroup = document.getElementById('customPriceGroup');
+                if (this.value === 'custom') {
+                    customPriceGroup.style.display = 'block';
+                    document.getElementById('customPrice').focus();
+                } else {
+                    customPriceGroup.style.display = 'none';
+                    document.getElementById('customPrice').value = '';
+                }
             });
         });
 
